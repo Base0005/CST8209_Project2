@@ -1,0 +1,181 @@
+@font-face {
+    font-family: TitlePokemon;
+    src: url(./Font/PokemonSolidNormal-xyWR.ttf)  format('truetype');
+}
+
+@font-face {
+    font-family: BitPokemon;
+    src: url(./Font/PokemonGB.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: LeagueGothic;
+    src: url(./Font/LeagueGothic-Regular-VariableFont_wdth.ttf);
+}
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(./Image/B&WPokeballPattern.png);
+    background-size: 20%;
+    padding: 20px;
+}
+
+.SiteTitle-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SiteTitle {
+    font-family: TitlePokemon;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.SiteTitle:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    font-family: BitPokemon;
+}
+
+.navbar div{
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    text-align: center;
+}
+
+.navbar div:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.PokemonSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+/* JS CSS */
+
+.PokemonCountContainer{
+    margin: 20px;
+    text-align: center;
+    font-family: LeagueGothic;
+    font-size: 50px;
+}
+
+.PokemonCard{
+    position: relative;
+    background-color: white;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: solid black 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 10px;
+    width: 350px;
+    height: 430px;
+    transition: height 300ms ease-in-out, width 300ms ease-in-out, background-color 0.3s ease;
+}
+
+.PokemonCard:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: rgb(253, 67, 67)
+}
+
+.PokemonBgImg{
+    width: 150px;
+    opacity: 0.3;
+    position: absolute;
+    display: none;
+}
+
+.PokemonCard .PokemonBgImg {
+    transition: transform 300ms ease-in-out; 
+}
+
+.PokemonCard:hover .PokemonBgImg {
+    transform: rotate(180deg);
+}
+
+
+.PokemonImg{
+    top: 10px;
+    width: 170px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(253, 67, 67);
+    border-radius: 10px; 
+}
+
+.PokemonCard .PokemonImg{
+    transition: background-color 0.3s ease;
+}
+
+.PokemonCard:hover .PokemonImg {
+    background-color: white
+}
+
+.PokemonName{
+    margin: 10px;
+    font-family:LeagueGothic;
+    font-size: 35px;
+}
+
+.PokemonType{
+    margin: 10px;
+    font-family:LeagueGothic;
+    font-size: 35px;
+}
+
+.PokemonStats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    font-family:LeagueGothic;
+    padding-left: 50px;
+}
+
+.PokemonStats div{
+    width: 175px;
+}
+
+/* Add styles for the rotating loading spinner */
+.loading-spinner {
+    width: 100px;
+    height: 100px;
+    margin: auto; /* Center the spinner */
+    margin-top: 20px ;
+    display: none; /* Initially hide the spinner */
+}
+
+/* Add a class for the rotating animation */
+.rotating {
+    animation: rotate 1s linear infinite;
+}
+
+/* Define the rotate animation */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
