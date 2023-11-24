@@ -68,6 +68,9 @@ BugBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -102,7 +105,8 @@ BugBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -136,7 +140,8 @@ DarkBtn.addEventListener("click", function () {
 		// Create The Amount Of Pokemon
 		let AmountOfPokemon = 0;
 		let PokemonCount = document.createElement("h2");
-		PokemonCount.textContent = "Amount Of Dark Type Pokemons:" + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Dark Type Pokemons:" + AmountOfPokemon;
 		// Create a new container for PokemonCount
 		PokemonCountContainer.appendChild(PokemonCount);
 		// Add Pokemon Of Specific Type
@@ -154,6 +159,9 @@ DarkBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -188,7 +196,8 @@ DarkBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -197,7 +206,8 @@ DarkBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Dark Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Dark Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
@@ -222,7 +232,8 @@ DragonBtn.addEventListener("click", function () {
 		// Create The Amount Of Pokemon
 		let AmountOfPokemon = 0;
 		let PokemonCount = document.createElement("h2");
-		PokemonCount.textContent = "Amount Of Dragon Type Pokemon:" + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Dragon Type Pokemon:" + AmountOfPokemon;
 		// Create a new container for PokemonCount
 		PokemonCountContainer.appendChild(PokemonCount);
 		// Add Pokemon Of Specific Type
@@ -240,6 +251,9 @@ DragonBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -274,7 +288,8 @@ DragonBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -283,7 +298,8 @@ DragonBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Dragon Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Dragon Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
@@ -308,7 +324,8 @@ ElectricBtn.addEventListener("click", function () {
 		// Create The Amount Of Pokemon
 		let AmountOfPokemon = 0;
 		let PokemonCount = document.createElement("h2");
-		PokemonCount.textContent = "Amount Of Electric Type Pokemon:" + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Electric Type Pokemon:" + AmountOfPokemon;
 		// Create a new container for PokemonCount
 		PokemonCountContainer.appendChild(PokemonCount);
 		// Add Pokemon Of Specific Type
@@ -326,6 +343,9 @@ ElectricBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -360,7 +380,8 @@ ElectricBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -369,7 +390,8 @@ ElectricBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Electric Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Electric Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
@@ -394,7 +416,8 @@ FairyBtn.addEventListener("click", function () {
 		// Create The Amount Of Pokemon
 		let AmountOfPokemon = 0;
 		let PokemonCount = document.createElement("h2");
-		PokemonCount.textContent = "Amount Of Fairy Type Pokemon:" + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Fairy Type Pokemon:" + AmountOfPokemon;
 		// Create a new container for PokemonCount
 		PokemonCountContainer.appendChild(PokemonCount);
 		// Add Pokemon Of Specific Type
@@ -412,6 +435,9 @@ FairyBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -446,7 +472,8 @@ FairyBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -455,7 +482,8 @@ FairyBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Fairy Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Fairy Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
@@ -480,7 +508,8 @@ FightingBtn.addEventListener("click", function () {
 		// Create The Amount Of Pokemon
 		let AmountOfPokemon = 0;
 		let PokemonCount = document.createElement("h2");
-		PokemonCount.textContent = "Amount Of Fighting Type Pokemon:" + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Fighting Type Pokemon:" + AmountOfPokemon;
 		// Create a new container for PokemonCount
 		PokemonCountContainer.appendChild(PokemonCount);
 		// Add Pokemon Of Specific Type
@@ -498,6 +527,9 @@ FightingBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -532,7 +564,8 @@ FightingBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -541,7 +574,8 @@ FightingBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Fighting Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Fighting Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
@@ -584,6 +618,9 @@ FireBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -618,7 +655,8 @@ FireBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -627,7 +665,8 @@ FireBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Fire Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Fire Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
@@ -652,7 +691,8 @@ FlyingBtn.addEventListener("click", function () {
 		// Create The Amount Of Pokemon
 		let AmountOfPokemon = 0;
 		let PokemonCount = document.createElement("h2");
-		PokemonCount.textContent = "Amount Of Flying Type Pokemon:" + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Flying Type Pokemon:" + AmountOfPokemon;
 		// Create a new container for PokemonCount
 		PokemonCountContainer.appendChild(PokemonCount);
 		// Add Pokemon Of Specific Type
@@ -670,6 +710,9 @@ FlyingBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -704,7 +747,8 @@ FlyingBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -713,7 +757,8 @@ FlyingBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Flying Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Flying Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
@@ -738,7 +783,8 @@ GhostBtn.addEventListener("click", function () {
 		// Create The Amount Of Pokemon
 		let AmountOfPokemon = 0;
 		let PokemonCount = document.createElement("h2");
-		PokemonCount.textContent = "Amount Of Ghost Type Pokemon:" + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Ghost Type Pokemon:" + AmountOfPokemon;
 		// Create a new container for PokemonCount
 		PokemonCountContainer.appendChild(PokemonCount);
 		// Add Pokemon Of Specific Type
@@ -756,6 +802,9 @@ GhostBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -790,7 +839,8 @@ GhostBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -799,7 +849,8 @@ GhostBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Ghost Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Ghost Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
@@ -824,7 +875,8 @@ GrassBtn.addEventListener("click", function () {
 		// Create The Amount Of Pokemon
 		let AmountOfPokemon = 0;
 		let PokemonCount = document.createElement("h2");
-		PokemonCount.textContent = "Amount Of Grass Type Pokemon:" + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Grass Type Pokemon:" + AmountOfPokemon;
 		// Create a new container for PokemonCount
 		PokemonCountContainer.appendChild(PokemonCount);
 		// Add Pokemon Of Specific Type
@@ -842,6 +894,9 @@ GrassBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -876,7 +931,8 @@ GrassBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -885,7 +941,8 @@ GrassBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Grass Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Grass Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
@@ -910,7 +967,8 @@ GroundBtn.addEventListener("click", function () {
 		// Create The Amount Of Pokemon
 		let AmountOfPokemon = 0;
 		let PokemonCount = document.createElement("h2");
-		PokemonCount.textContent = "Amount Of Ground Type Pokemon:" + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Ground Type Pokemon:" + AmountOfPokemon;
 		// Create a new container for PokemonCount
 		PokemonCountContainer.appendChild(PokemonCount);
 		// Add Pokemon Of Specific Type
@@ -928,6 +986,9 @@ GroundBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -962,7 +1023,8 @@ GroundBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -971,7 +1033,8 @@ GroundBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Ground Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Ground Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
@@ -1014,6 +1077,9 @@ IceBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -1048,7 +1114,8 @@ IceBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -1082,7 +1149,8 @@ NormalBtn.addEventListener("click", function () {
 		// Create The Amount Of Pokemon
 		let AmountOfPokemon = 0;
 		let PokemonCount = document.createElement("h2");
-		PokemonCount.textContent = "Amount Of Normal Type Pokemon:" + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Normal Type Pokemon:" + AmountOfPokemon;
 		// Create a new container for PokemonCount
 		PokemonCountContainer.appendChild(PokemonCount);
 		// Add Pokemon Of Specific Type
@@ -1100,6 +1168,9 @@ NormalBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -1134,7 +1205,8 @@ NormalBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -1143,7 +1215,8 @@ NormalBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Normal Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Normal Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
@@ -1168,7 +1241,8 @@ PoisonBtn.addEventListener("click", function () {
 		// Create The Amount Of Pokemon
 		let AmountOfPokemon = 0;
 		let PokemonCount = document.createElement("h2");
-		PokemonCount.textContent = "Amount Of Poison Type Pokemon:" + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Poison Type Pokemon:" + AmountOfPokemon;
 		// Create a new container for PokemonCount
 		PokemonCountContainer.appendChild(PokemonCount);
 		// Add Pokemon Of Specific Type
@@ -1186,6 +1260,9 @@ PoisonBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -1220,7 +1297,8 @@ PoisonBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -1229,7 +1307,8 @@ PoisonBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Poison Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Poison Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
@@ -1254,7 +1333,8 @@ PsychicBtn.addEventListener("click", function () {
 		// Create The Amount Of Pokemon
 		let AmountOfPokemon = 0;
 		let PokemonCount = document.createElement("h2");
-		PokemonCount.textContent = "Amount Of Psychic Type Pokemon:" + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Psychic Type Pokemon:" + AmountOfPokemon;
 		// Create a new container for PokemonCount
 		PokemonCountContainer.appendChild(PokemonCount);
 		// Add Pokemon Of Specific Type
@@ -1272,6 +1352,9 @@ PsychicBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -1306,7 +1389,8 @@ PsychicBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -1315,7 +1399,8 @@ PsychicBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Psychic Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Psychic Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
@@ -1358,6 +1443,9 @@ RockBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -1392,7 +1480,8 @@ RockBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -1401,7 +1490,8 @@ RockBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Rock Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Rock Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
@@ -1426,7 +1516,8 @@ SteelBtn.addEventListener("click", function () {
 		// Create The Amount Of Pokemon
 		let AmountOfPokemon = 0;
 		let PokemonCount = document.createElement("h2");
-		PokemonCount.textContent = "Amount Of Steel Type Pokemon:" + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Steel Type Pokemon:" + AmountOfPokemon;
 		// Create a new container for PokemonCount
 		PokemonCountContainer.appendChild(PokemonCount);
 		// Add Pokemon Of Specific Type
@@ -1444,6 +1535,9 @@ SteelBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -1478,7 +1572,8 @@ SteelBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -1487,7 +1582,8 @@ SteelBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Steel Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Steel Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
@@ -1512,7 +1608,8 @@ WaterBtn.addEventListener("click", function () {
 		// Create The Amount Of Pokemon
 		let AmountOfPokemon = 0;
 		let PokemonCount = document.createElement("h2");
-		PokemonCount.textContent = "Amount Of Water Type Pokemon:" + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Water Type Pokemon:" + AmountOfPokemon;
 		// Create a new container for PokemonCount
 		PokemonCountContainer.appendChild(PokemonCount);
 		// Add Pokemon Of Specific Type
@@ -1530,6 +1627,9 @@ WaterBtn.addEventListener("click", function () {
 				PokemonBgImg.src = "./Image/Pokeball.png";
 				PokemonCard.appendChild(PokemonBgImg);
 				// Create + Add Pokemon Image
+				const PokemonAnchor = document.createElement("a");
+				PokemonAnchor.target = "_blank";
+				PokemonAnchor.href = pokedex[i].url;
 				const PokemonImg = document.createElement("img");
 				PokemonImg.className = "PokemonImg";
 				PokemonImg.src = pokedex[i].sprite;
@@ -1564,7 +1664,8 @@ WaterBtn.addEventListener("click", function () {
 				PokemonStats.appendChild(PokemonSpATK);
 				PokemonStats.appendChild(PokemonSpDEF);
 				PokemonStats.appendChild(PokemonSPD);
-				PokemonCard.appendChild(PokemonImg);
+				PokemonAnchor.appendChild(PokemonImg);
+				PokemonCard.appendChild(PokemonAnchor);
 				PokemonCard.appendChild(PokemonName);
 				PokemonCard.appendChild(PokemonType);
 				PokemonCard.appendChild(PokemonStats);
@@ -1573,7 +1674,8 @@ WaterBtn.addEventListener("click", function () {
 			}
 		}
 		// Update the Pokemon Count
-		PokemonCount.textContent = "Amount Of Water Type Pokemon: " + AmountOfPokemon;
+		PokemonCount.textContent =
+			"Amount Of Water Type Pokemon: " + AmountOfPokemon;
 		// Append PokemonCountContainer and PokemonSection to a common parent
 		let mainContainer = document.createElement("div");
 		mainContainer.appendChild(PokemonCountContainer);
